@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #F7F4EF;
+  --color-ivory-50: #FCFBF9;
+  --color-ivory-100: #F7F4EF;
+  --color-ivory-200: #EFEAE2;
+  --color-ivory-300: #E4DDD0;
+  
+  --color-beige: #E8E0D5;
+  --color-beige-light: #F3EFE9;
+  --color-beige-dark: #D5C9BA;
+
+  --color-taupe: #B4A38B;
+  --color-taupe-light: #C7BAA5;
+  --color-taupe-dark: #938169;
+
+  --color-gold: #AD8B59;
+  --color-gold-light: #C4A470;
+  --color-gold-dark: #8C6C3B;
+  --color-gold-muted: #C1A87E;
+
+  --color-charcoal: #24211C;
+  --color-charcoal-50: #F6F5F4;
+  --color-charcoal-100: #ECEAE8;
+  --color-charcoal-200: #D5D1CE;
+  --color-charcoal-300: #A8A29E;
+  --color-charcoal-400: #78716C;
+  --color-charcoal-500: #57534E;
+  --color-charcoal-600: #44403C;
+  --color-charcoal-700: #292524;
+  --color-charcoal-800: #1C1917;
+  --color-charcoal-900: #12100E;
+
+  --color-deepbrown: #332A20;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+  
+  --shadow-soft: 0 4px 20px -2px rgba(36, 33, 28, 0.05), 0 2px 6px -1px rgba(36, 33, 28, 0.03);
+  --shadow-soft-hover: 0 10px 30px -4px rgba(36, 33, 28, 0.08), 0 4px 10px -2px rgba(36, 33, 28, 0.04);
+}
+
+:root {
+  --color-ivory: #F7F4EF;
+  --color-beige: #E8E0D5;
+  --color-taupe: #B4A38B;
+  --color-gold: #AD8B59;
+  --color-charcoal: #24211C;
+  --color-deepbrown: #332A20;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F4EF;
+  color: #24211C;
+  overflow-x: hidden;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F4EF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5C9BA;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B4A38B;
+}
+
+/* Focus styling */
+:focus-visible {
+  outline: 2px solid #AD8B59;
+  outline-offset: 2px;
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tracking-luxury {
+  letter-spacing: 0.15em;
+}
