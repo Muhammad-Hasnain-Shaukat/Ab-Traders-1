@@ -42,6 +42,7 @@
 }
 
 :root {
+  --vh: 1vh;
   --color-ivory: #F7F4EF;
   --color-beige: #E8E0D5;
   --color-taupe: #B4A38B;
