@@ -58,11 +58,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMobileMenu, onOpenSearch }
 
           {/* Logo / Wordmark */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-md">
-              {/* Minimalist bottle monogram logo badge */}
-              <div className="w-8 h-8 rounded border border-gold/40 bg-charcoal flex items-center justify-center text-ivory font-serif text-sm font-semibold tracking-wider transition-transform duration-300 group-hover:scale-105">
-                AB
-              </div>
+            <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-md">
+              <img
+                src="/images/logo-dark.png"
+                alt="AB TRADERS Logo"
+                className="h-10 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
               <div className="flex flex-col">
                 <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-charcoal leading-none">
                   AB TRADERS
